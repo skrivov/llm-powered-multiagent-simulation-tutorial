@@ -142,7 +142,7 @@ async def simulation_loop(agents, rounds):
         print(f"{agent.name}: {completion.strip()}")
 ```
 
-By adopting asynchronous programming, we speed up the simulation and enhance scalability, making it possible to efficiently handle more agents and rounds. Here is a complet code for the [asyncronious version of the program](asynchronious-comedians.py)
+By adopting asynchronous programming, we speed up the simulation and enhance scalability, making it possible to efficiently handle more agents and rounds. Here is a complet code for the [asyncronious version of the program](asynchronious-comedians.py).
 
 Now that we know the basic code patterns of an LLM based multiagent simulator, we can write more entertaining programs. In the next version of the program, we  add a jury agent to evaluate the comedians' performances. The new addition here is the information flow from the comedians to the jury agent, where the jury receives and analyzes all the jokes before making a decision. You can explore this program [here](comedians-and-jury.py).
 
@@ -192,7 +192,7 @@ for other_agent in agents:
 ```
 This code iterates over all agents in the simulation. For each agent that did not generate the current response, the response is added to their messages list. This way, every agent stays updated with the latest interactions, allowing them to respond more appropriately in subsequent rounds.  
 
-The whole program can be found [here](conversation.py) Here is a sample output from this program.
+The whole program can be found [here](conversation.py). Here is a sample output from this program.
 
 RRound 1:
 
